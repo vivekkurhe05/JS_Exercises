@@ -5,6 +5,9 @@
  * "Robi"
  */
 
+
+// #1
+
 function truncate_string (str, numOfChars) {
 
     if(numOfChars == undefined) return str;
@@ -13,7 +16,7 @@ function truncate_string (str, numOfChars) {
 
 console.log(truncate_string("Robin Singh",4));
 
-// or
+// or #2
 
 function truncate_string (str, numOfChars) {
 
@@ -21,6 +24,21 @@ function truncate_string (str, numOfChars) {
 }
 
 console.log(truncate_string("Robin Singh",4));
+
+//or #3
+
+function truncate_string (str, numOfChars) {
+    let substr = '';
+
+    if (typeof numOfChars == 'undefined') return str;
+
+    for (let i=0; i<numOfChars; i++) {
+        substr += str.charAt(i);
+    }
+    return substr;
+}
+
+console.log(truncate_string("Robin Singh", 4));
 
 /**
  * 

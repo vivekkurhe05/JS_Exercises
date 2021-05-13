@@ -13,3 +13,14 @@ function abbrev_name (str) {
 }
 
 console.log(abbrev_name("Nisha Lad"));
+
+//or
+
+
+function abbrev_name (str) {
+    let index = str.indexOf(' ', 0);
+
+    return str.substring(0, str.indexOf(' ', 0)) + ' ' + str.charAt(index+1) + '.';
+}
+
+console.log(abbrev_name("Nisha Lad"));

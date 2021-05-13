@@ -14,5 +14,17 @@ function is_blank (str) {
     return false;
 }
 
-console.log(is_Blank(''));
-console.log(is_Blank('abc'));
+console.log(is_blank(''));
+console.log(is_blank('abc'));
+
+
+// or
+
+function is_blank (str) {
+
+    if(str == '') return true;
+    return false;
+}
+
+console.log(is_blank(''));
+console.log(is_blank('abc'));
