@@ -24,3 +24,26 @@ swapcase = function swapcase(str) {
     });
 }
 console.log(swapcase('AaBbc'));
+
+//or
+
+function swapcase(str) {
+
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+
+    let arr = [];
+
+    for (let i = 0; i < str.length; i++) {
+        if (UPPER.includes(str[i])) {
+            arr.push(str[i].toLocaleLowerCase());
+        }
+        if (lower.includes(str[i])) {
+            arr.push(str[i].toLocaleUpperCase());
+        }
+    }
+
+    return arr.join('');
+}
+
+console.log(swapcase('AaBbc'));
