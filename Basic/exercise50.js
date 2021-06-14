@@ -3,6 +3,8 @@
  */
 
 function capitalizeFirstLetter(str){
-    return str[0].toUpperCase() + str.substring(1);
+    return str.replace(/[a-z]+/gi, function(el){
+        return el[0].toUpperCase() + el.substring(1);
+    })
 }
-console.log(capitalizeFirstLetter('welcome'));
+console.log(capitalizeFirstLetter('the quick brown fox'));

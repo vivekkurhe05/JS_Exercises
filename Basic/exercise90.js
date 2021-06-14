@@ -2,6 +2,8 @@
  * Write a JavaScript program to find the kth greatest element of a given array of integers
  */
 
+// your solution
+
 function kth_greatest_elem(arr, k) {
     let desc_sort = arr.sort(function(a, b){
         if(a > b) return -1;

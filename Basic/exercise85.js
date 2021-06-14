@@ -5,6 +5,8 @@
  * Now compute the sum of two parts and store into an array of size two.
  */
 
+// your solution
+
 function pos_int(arr) {
     let even_indx = [];
     let odd_indx = [];
@@ -28,7 +30,7 @@ function pos_int(arr) {
 console.log(pos_int([1, 2, 3, 4, 5, 6]));
 console.log(pos_int([1, 3, 6, 2, 5, 10]));
 
-//or
+//w3resource solution
 
 function alternate_Sums(arr) {
     var result = [0, 0];

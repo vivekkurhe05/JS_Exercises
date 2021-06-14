@@ -11,11 +11,7 @@ function twice30or40(arr, num) {
         count++;
         index = arr.indexOf(num, index+1);
     }
-    if(count ==2){
-        return true;
-    }else{
-        return false;
-    }
+    return count === 2 ? true : false;
 }
 console.log(twice30or40([30,30,40], 30));
 console.log(twice30or40([30,40,40], 40));

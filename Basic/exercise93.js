@@ -24,6 +24,23 @@ function maximal_diff(arr) {
  console.log(maximal_diff([1, 2, 3, 18, 9]))
  console.log(maximal_diff([13, 2, 3, 8, 9]))
 
+// or
+
+function array_max_diff(arr) {
+    let max_diff = arr[0]-arr[0];
+    for(let i=0; i<arr.length; i++) {
+        for(j=i; j<arr.length; j++) {
+            if(max_diff > arr[i]-arr[j]){
+                max_diff = arr[i]-arr[j];
+            }
+        }
+    }
+    return Math.abs(max_diff);
+}
+console.log(array_max_diff([1, 2, 3, 8, 9]))
+console.log(array_max_diff([1, 2, 3, 18, 9]))
+console.log(array_max_diff([13, 2, 3, 8, 9]))
+
  /**
   * w3resource solution
   */

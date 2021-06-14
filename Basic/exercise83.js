@@ -14,7 +14,7 @@ function longest_string(arr) {
 console.log(longest_string(['aa', 'aaa', 'aaaaaaa', 'aaaaa']));
 
 
-//or
+//or w3resource solution
 
 function longest_string(str_ara) {
     var max = str_ara[0].length;
@@ -26,5 +26,23 @@ function longest_string(str_ara) {
         return elem.length == max;
     });
     return result;
+}
+console.log(longest_string(['aa', 'aaa', 'aaaaaaa', 'aaaaa']));
+
+// or your solution
+
+function longest_string(arr) {
+    let max_len = arr[0].length;
+    let str_arr = [];
+
+    for(let i=0; i<arr.length; i++) {
+        if(arr[i].length > max_len) max_len = arr[i].length;
+    }
+
+    for(let i=0; i<arr.length; i++) {
+        if(max_len === arr[i].length) str_arr.push(arr[i]);
+    }
+
+    return str_arr;
 }
 console.log(longest_string(['aa', 'aaa', 'aaaaaaa', 'aaaaa']));

@@ -22,6 +22,21 @@ console.log(max_possible_sum([1,2,3,14,5]));
 console.log(max_possible_sum([2, 3, 5, 1, 6]))
 console.log(max_possible_sum([9, 3, 5, 1, 7]))
 
+  // or
+  // your solution
+  function array_max_consecutive_sum(arr) {
+    let max = arr[0] + arr[1];
+    for(let i=1; i<arr.length-1; i++) {
+      if(max < (arr[i]+arr[i+1])){
+        max = arr[i] + arr[i+1];
+      }
+    }
+    return max;
+  }
+  console.log(array_max_consecutive_sum([1, 2, 3, 14, 5], 2))
+  console.log(array_max_consecutive_sum([2, 3, 5, 1, 6], 3))
+  console.log(array_max_consecutive_sum([9, 3, 5, 1, 7], 2))
+
 /**
  * w3resource solution
  */

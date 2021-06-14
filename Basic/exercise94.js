@@ -4,33 +4,40 @@
 
 /**
  * 
- your solution is not complete 
+ your solution
  */
-function element_appearing_most(arr) {
-    let count = 0;
-    let new_arr = [];
-    for(let i=0; i< arr.length; i++){
-        let index = arr.indexOf(arr[i], 0);
-        while(index != -1){
-            count++;
-            index = arr.indexOf(arr[i], index+1);
-        }
-        new_arr.push(count);
-        count=0;
-    }
-    return new_arr;
 
+function element_appearing_most(arr) {
+  let max_count = 0,
+  num =0;
+  for(let i=0; i<arr.length; i++){
+    let count = 0;
+    let index = arr.indexOf(arr[i], 0);
+  
+    while (index != -1) {
+      count++;
+      index = arr.indexOf(arr[i], index + 1);
+      if(max_count < count) {
+        max_count = count;
+        num = arr[i];
+      }
+    }
+     
+  }
+
+  return num;
 }
-console.log(element_appearing_most([1,2,3,2,2,8,1,9]));
+console.log(element_appearing_most([1, 2, 3, 2, 2, 8, 1, 9]));
+console.log(element_appearing_most([8, 8, 8, 6, 6, 6, 4, 4, 4, 4]))
 
 /**
- * 
+ *
  * w3resource solution
  */
 function array_element_mode(arr) {
     var ctr = [],
       ans = 0;
-  
+
     for(var i = 0; i < 10; i++) {
       ctr.push(0);
     }

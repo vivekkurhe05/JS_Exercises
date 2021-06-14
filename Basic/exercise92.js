@@ -22,6 +22,21 @@ console.log(maximal_diff([1, 2, 3, 18, 9]))
 console.log(maximal_diff([13, 2, 3, 8, 9]))
 console.log(maximal_diff([5,6,2,56,32,65,22]));
 
+// or your solution
+
+function max_difference(arr) {
+    let max_diff = arr[0] - arr[1];
+    for(let i=0; i<arr.length-1; i++) {
+        if(max_diff < (arr[i]-arr[i+1])){
+            max_diff = arr[i]-arr[i+1];
+        }
+    }
+    return max_diff;
+}
+console.log(max_difference([1, 2, 3, 8, 9]))
+console.log(max_difference([1, 2, 3, 18, 9]))
+console.log(max_difference([13, 2, 3, 8, 9]))
+
 /**
  * w3resource solution
  */
