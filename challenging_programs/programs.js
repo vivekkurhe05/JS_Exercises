@@ -16,12 +16,12 @@
 
 // 89. Write a JavaScript program to check whether it is possible to replace $ in a given expression x $ y = z 
 // with one of the four signs +, -, * or / to obtain a correct expression.
-// For example x = 10, y = 30 and z = 300, we can replace $ with a multiple operator (*) to obtain x * y = z
+// For example x = 10, y = 30 and z = 300, we can replace $ with a multiple operator (*) to obtain x * y = z - done
 
 // 91. Write a JavaScript program to find the maximum possible sum of some of its k consecutive numbers 
-// (numbers that follow each other in order.) of a given array of positive integers.
+// (numbers that follow each other in order.) of a given array of positive integers. - done
 
-// 94. Write a JavaScript program to find the number which appears most in a given array of integers.
+// 94. Write a JavaScript program to find the number which appears most in a given array of integers. - done
 
 // 97. Write a JavaScript program to find the shortest possible string which can create a string 
 // to make it a palindrome by adding characters to the end of it.
