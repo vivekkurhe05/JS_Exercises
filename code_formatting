@@ -1,0 +1,8 @@
+You can use this html syntax to format code in the comment section at w3resource.
+
+<pre>
+ <code class="javascript">
+    var foo = 'bar';
+    alert('foo');
+ </code>
+</pre>

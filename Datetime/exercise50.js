@@ -12,6 +12,6 @@
 
  }
 
-dt = new Date(2021,5,22); 
+dt = new Date(2021,5,20); 
 
 console.log(startOfWeek(dt).toString());
