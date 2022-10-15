@@ -10,4 +10,5 @@ do{
     }
 }while(match!=null);
 
+console.log(matches);
 console.log(matches.map((el) => el[0]));
