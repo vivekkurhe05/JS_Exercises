@@ -5,4 +5,4 @@
 // w3resource solution
 let text = "PythonTutorialAndExercises";
 let re = /[A-Z][^A-Z]*/g;
-console.log(text.match(re, "\n"))
+console.log(text.match(re, "\n"));

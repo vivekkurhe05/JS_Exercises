@@ -27,3 +27,15 @@ console.log(camel_to_snake('PythonExercises'));
  * 
  * 3. Write a Python program to find urls in a string. (exercise-42)
  */
+
+/**
+ * 4. Write a Python program to remove the ANSI escape sequences from a string. (exercise-45)
+ */
+
+/**
+ * 5. Write a Python program to split a string with multiple delimiters. (exercise-47)
+ */
+
+/**
+ * 6. Write a Python program to check a decimal with a precision of 2. (exercise-48)
+ */
