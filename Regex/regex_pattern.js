@@ -39,3 +39,15 @@ console.log(camel_to_snake('PythonExercises'));
 /**
  * 6. Write a Python program to check a decimal with a precision of 2. (exercise-48)
  */
+
+/**
+ * 7. Write a Python program to concatenate the consecutive numbers in a given string. (exercise-54)
+Original string:
+Enter at 1 20 Kearny Street. The security desk can direct you to floor 1 6. Please have your identification ready.
+After concatenating the consecutive numbers in the said string:
+Enter at 120 Kearny Street. The security desk can direct you to floor 16. Please have your identification ready. 
+ */
+
+/**
+ * Write a Python program to check a decimal with a precision of 2. (exercise-48)
+ */
