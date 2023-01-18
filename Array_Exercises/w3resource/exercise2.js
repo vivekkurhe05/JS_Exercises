@@ -15,3 +15,18 @@ function array_Clone(arr) {
 
 console.log(array_Clone([1, 2, 4, 0]));
 console.log(array_Clone([1, 2, [4, 0]]));
+
+// or
+
+function array_Clone(arr) {
+  let numbersCopy = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    numbersCopy[i] = arr[i];
+  }
+
+  return numbersCopy;
+}
+
+console.log(array_Clone([1, 2, 4, 0]));
+console.log(array_Clone([1, 2, [4, 0]]));
