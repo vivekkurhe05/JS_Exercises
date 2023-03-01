@@ -4,7 +4,7 @@
 
 // my solution
 function validate(str) {
-  let re = /[^a-zA-Z]/g;
+  let re = /[^a-zA-Z0-9]/g;
   return str.replace(re, "");
 }
 

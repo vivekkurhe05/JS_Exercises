@@ -3,7 +3,7 @@
  * letter and a lower case letter in a given string.
  */
 
-// my solution
+// my solution (incomplete)
 function validate(str) {
 
     return str.replace(/[A-Z]/g, function(chr) {

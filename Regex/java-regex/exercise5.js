@@ -4,7 +4,7 @@
 
 // my solution
 function validate(str) {
-  let re = /p.*q$/;
+  let re = /^p.*q$/;
   return re.test(str);
 }
 

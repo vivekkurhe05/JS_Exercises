@@ -22,3 +22,18 @@ console.log(validate("SQLite", 2));
 console.log(validate("The quick brown fox jumps over the lazy dog.", 2));
 console.log(validate("The quick brown fox jumps over the lazy dog.", 3));
 console.log(validate("The quick brown fox jumps over the lazy dog.", 15));
+
+// or
+// my solution
+function validate2(str, n) {
+  let re = /[aeiou]/gi;
+  return str.match(re).slice(-n);
+}
+
+console.log(validate2("Java", 2));
+console.log(validate2("JavaScript", 2));
+console.log(validate2("JavaScript", 3));
+console.log(validate2("SQLite", 2));
+console.log(validate2("The quick brown fox jumps over the lazy dog.", 2));
+console.log(validate2("The quick brown fox jumps over the lazy dog.", 3));
+console.log(validate2("The quick brown fox jumps over the lazy dog.", 15));

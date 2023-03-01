@@ -18,3 +18,17 @@ console.log(validate("#eaecff")); // true
 console.log(validate("#FF0000")); // true
 console.log(validate("#DD5C5C")); // true
 console.log(validate("#0000000")); // false
+
+// or
+// my solution
+function validate2(str) {
+  // let re = /^#?(\d{3,6})|([a-fA-F]{3,6})|([a-fA-F0-9]{3,6})/g;
+  let re = /^\#?(\d|[a-f]|[a-f0-9]){3,6}$/gi;
+  return re.test(str);
+}
+
+console.log(validate2("123456")); // true
+console.log(validate2("#eaecff")); // true
+console.log(validate2("#FF0000")); // true
+console.log(validate2("#DD5C5C")); // true
+console.log(validate2("#0000000")); // false

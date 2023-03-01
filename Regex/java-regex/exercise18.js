@@ -16,3 +16,18 @@ console.log(validate("123456")); // true
 console.log(validate("1234567")); // false
 console.log(validate("12345678")); // true
 console.log(validate("123456789")); // false
+
+// or
+// my solution
+function validate2(str) {
+  let re = /^(\d{4}|\d{6}|\d{8})$/g;
+  return re.test(str);
+}
+
+console.log(validate2("123")); // false
+console.log(validate2("1234")); // true
+console.log(validate2("12345")); // false
+console.log(validate2("123456")); // true
+console.log(validate2("1234567")); // false
+console.log(validate2("12345678")); // true
+console.log(validate2("123456789")); // false

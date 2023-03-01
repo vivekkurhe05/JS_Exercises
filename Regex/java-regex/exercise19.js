@@ -20,3 +20,15 @@ function validate(str) {
 console.log(validate("The quick brown fox jumps over the lazy dog."));
 console.log(validate("Java Exercises."));
 console.log(validate("Java linkedlist."));
+
+// or
+// my solution
+function validate2(str) {
+  let re = /[pqr]/g;
+  if(str.search(re) === -1) return "Not found.";
+  return str.replace(re, "");
+}
+
+console.log(validate2("The quick brown fox jumps over the lazy dog."));
+console.log(validate2("Java Exercises."));
+console.log(validate2("Java linkedlist."));

@@ -15,3 +15,20 @@ console.log(
   validate("Add a dash before and after every vowel in the said string:")
 );
 console.log(validate("The quick brown fox jumps over the lazy dog."));
+
+// or
+// my solution
+function validate2(str) {
+
+  str = str.split(" ");
+
+  return str.map(el => {
+    if(el.length > 3) return el.split(" ").reverse(" ").join(" ").split("").reverse("").join("")
+    else return el;
+  }).join(" ");
+}
+
+console.log(
+    validate2("Add a dash before and after every vowel in the said string:")
+  );
+  console.log(validate2("The quick brown fox jumps over the lazy dog."));
