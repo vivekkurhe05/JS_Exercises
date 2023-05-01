@@ -6,6 +6,7 @@
 const products = [{name: 'Computer mouse'}]
 const product = products[0]
 
+// truthy condition
 if(product) {
     console.log('Product found')
 } else {
