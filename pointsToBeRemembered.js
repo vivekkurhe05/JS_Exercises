@@ -7,3 +7,5 @@
 // 4. There are two main differences between an arrow function and a regular function
 // - In the arrow function, the this, arguments, super, new.target are lexical. It means that the arrow function uses these variables from the enclosing lexical scope.
 // - An arrow function cannot be used as a function constructor. If you use the new keyword to create an object from an arrow function, you will get an error.
+
+// 5. The problem with the constructor function is that when you create multiple instances of the constructor function, the method is duplicated in every instance which is not memory efficient. To resolve this, you can use the prototype so that all instances can share the same method.
