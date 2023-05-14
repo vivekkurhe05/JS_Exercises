@@ -19,3 +19,6 @@
 // String, Number, Boolean, Object, Array of objects, Null
 
 // 8. The difference between at() and charAt() method is when specifying at(-1), it returns the last character whereas charAt(-1) returns empty string 
+
+// 9. Falsy values - false, 0, empty string, null, undefined, NaN
+// Truthy values - everything else is truthy
